@@ -8,4 +8,10 @@ describe "Static Pages" do
      page.should have_content('Sample App')
     end
   end
+  describe "Help pages" do
+  	it "should have the contenct'help'" do
+  		visit '/static_pages/help'
+  		page.should have_content('Help')
+  	end
+  end
 end
